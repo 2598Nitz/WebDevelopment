@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "SurveyFormGrid.css">
+  </head>
+
+  <body id = "main">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class = "fullcard" id = "thumbnail">
+      <h1 id = "title" style = "text-align:center;">Survey Form</h1>
+      <p id = "description">Let us know how we can improve FreeCodeCamp</p>
+      <hr id = "rule">
+
+    <form action = "/submit survey form" id = "survey-form">
+      <div class = "grid">
+        <div>
+          <label for = "name" id = "name-label">Name:</label>
+        </div>
+        <div>
+          <input type = "text" id = "name" placeholder = "Enter your name" required />
+        </div>
+        <div>
+          <label for = "email" id = "email-label">Email:</label>
+        </div>
+        <div>
+          <input type = "email" id = "email" placeholder = "Enter your Email" required />
+        </div>
+        <div>
+          <label for = "number" id ="number-label">Contact Number:</label>
+        </div>
+        <div>
+          <input type = "number" id = "number" placeholder = "Enter contact no." min = "1000000000" max = "9999999999"/>
+        </div>
+        <div>
+          <label>What do you like most in FCC?</label>
+        </div>
+        <div>
+          <select name="course" id = "dropdown">
+          <option value="Disabled" disabled selected>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+          </select>
+        </div>
+        <div>
+          <label>How likely is that you will recommend FCC?</label>
+        </div>
+        <div class = "inner-grid">
+          <div>
+          <input type = "radio" name = "rec" value = "definitely" id = "definitely">
+          </div>
+          <div>
+          <label for = "definitely">Definitely</label>
+          </div>
+          <div>
+          <input type = "radio" name = "rec"value="maybe" id = "maybe">
+          </div>
+          <div>
+          <label for = "maybe">Maybe</label>
+          </div>
+          <div>
+          <input type = "radio" name = "rec"value="not sure" id = "unsure">
+          </div>
+          <div>
+          <label for = "unsure">Not Sure</label>
+          </div>
+        </div>
+        <div>
+          <label>Things that should be improved in future(Check all that apply)</label>
+        </div>
+        <div class = "inner-grid">
+        <div>
+        <input type = "checkbox" name = "che"value="frontend" id = "front-end">
+        </div>
+        <div>
+        <label for = "front-end">Front-end</label>
+        </div>
+        <div>
+        <input type = "checkbox" name = "che"value="backend" id = "back-end">
+        </div>
+        <div>
+        <label for = "back-end">Back-end</label>
+        </div>
+        <div>
+        <input type = "checkbox" name = "che"value="dataviz" id = "dataviz">
+        </div>
+        <div>
+        <label for = "dataviz">Data Visualization</label>
+        </div>
+        </div>
+        <div>
+        <label for = "text">Additional feedback:</label>
+        </div>
+        <div>
+          <textarea rows = "4" cols = "30">Enter your comments here...</textarea>
+        </div>
+      </div>
+      <div class = "button-container">
+      <button type = "submit" name = "submit" id = "submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </body>
+
+</html>
