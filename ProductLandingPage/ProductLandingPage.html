@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "ProductLandingPage.css">
+  </head>
+  <body id = "main">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="page-wrapper">
+<header id="header">
+  <h1 class="logo">
+    <img id="header-img" src="https://lh3.googleusercontent.com/G08a6kXwIBZ79weOY9wHAxqBOZt80f7Mr5_C1daOzpaNh9L1jQDsagxN7et8A820fWim=s85" alt="logo" width=40px/>
+  </h1>
+  <input type="checkbox" class="nav-toggle" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#home">Home</a></li>
+      <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      <li><a class="nav-link" href="#sform">Form</a></li>
+    </ul>
+  </nav>
+</header>
+</div>
+<div id = "home">
+  <h2 style="font-size:25px;">Definition of Eye Tracking</h2>
+  <p id = "floatl">
+    Eye tracking refers to the process of measuring where we look, also known as our point of gaze.
+    These measurements are carried out by an eye tracker, that records the position of the eyes and the movements they make.
+    Eye tracking records our point of gaze and our eye movements in relation to the environment and is typically based on
+    the optical tracking of corneal reflections, known as pupil center corneal reflection (PCCR).
+    Near-infrared light is directed towards the center of the eyes (pupil), causing visible reflections in the cornea
+     (outer-most optical element of the eye). These reflections – the vector between the cornea and the pupil – are tracked by an infrared camera.
+  </p>
+
+  <img src = "pupil.png" alt="pupil">
+  <div class="clear"></div>
+  <hr>
+</div>
+  <div id = "how-it-works">
+  <p style="font-size: 18px;">Here's a video showing how it works: </p>
+  <br>
+  <iframe width="480" height="360" src="https://www.youtube.com/embed/AztH_YVQN-k" id = "video">
+  </iframe>
+  <br><br>
+  <hr>
+</div>
+<div id = "pricing">
+  <p>Cost for software and hardware together: 50$</p>
+  <br><br>
+  <hr>
+</div>
+<div id = "sform">
+  <p>Enter your email id in following form in order to purchase our product.Further details will be provided via email.</p>
+  <br>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+    <input id="submit" type="submit"></input>
+  </form>
+</div>
+</body>
+</html>
